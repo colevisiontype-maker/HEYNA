@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEYNA X KUPALINO WORLDWIDE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(50, 50, 50, 0.95) 100%);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 0, 0, 0.2);
+            animation: fadeIn 0.6s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            color: #ff0000;
+            font-size: 3.5em;
+            text-align: center;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            margin-bottom: 10px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+        h2 {
+            color: #ff4444;
+            font-size: 1.8em;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+            letter-spacing: 3px;
+        }
+        p {
+            color: #cccccc;
+            line-height: 1.8;
+        }
+        .avatars-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 3px solid rgba(255, 0, 0, 0.3);
+        }
+        .avatars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .avatar-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, rgba(100, 100, 100, 0.3) 0%, rgba(50, 50, 50, 0.3) 100%);
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .avatar-card:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.2) 0%, rgba(255, 68, 68, 0.1) 100%);
+            border: 2px solid rgba(255, 0, 0, 0.6);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+        }
+        .avatar-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 4px solid #ff0000;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            object-fit: cover;
+        }
+        .avatar-card:hover .avatar-img {
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+            border: 4px solid #ff4444;
+        }
+        .avatar-name {
+            font-weight: bold;
+            color: #ff0000;
+            margin: 10px 0;
+            font-size: 1.1em;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+        }
+        .music-player {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.2) 0%, rgba(50, 50, 50, 0.8) 100%);
+            padding: 20px;
+            border-radius: 15px;
+            z-index: 1000;
+            border: 2px solid rgba(255, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        .music-player audio {
+            width: 280px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HEYNA</h1>
+
+        <div class="avatars-section">
+            <h2></h2>
+            <div class="avatars-grid">
+                <div class="avatar-card">
+                    <img src="https://i.pinimg.com/originals/59/a0/eb/59a0ebdb1e36d2376ff5ef3b12da588d.gif" alt="Coby" class="avatar-img">
+                    <div class="avatar-name">Coby</div>
+                </div>
+                <div class="avatar-card">
+                    <img src="https://i.makeagif.com/media/10-01-2022/Fq5W_E.gif" alt="Chris" class="avatar-img">
+                    <div class="avatar-name">Khean</div>
+                </div>
+                <div class="avatar-card">
+                    <img src="https://i.pinimg.com/originals/e7/12/f3/e712f393c6438f40c2c00950e406a7ce.gif" alt="FEYT" class="avatar-img">
+                    <div class="avatar-name">Feyt</div>
+                </div>
+                <div class="avatar-card">
+                    <img src="https://i.pinimg.com/originals/35/07/58/3507584a6781952b4e7ed399717eb042.gif" alt="User 3" class="avatar-img">
+                    <div class="avatar-name">Amrei</div>
+                </div>
+                <div class="avatar-card">
+                    <img src="https://i.pinimg.com/originals/aa/01/e0/aa01e061a2de50816ba6878b75ae0138.gif" alt="User 3" class="avatar-img">
+                    <div class="avatar-name">Ver</div>
+                </div>
+                <div class="avatar-card">
+                    <img src="https://i.makeagif.com/media/8-28-2016/m_lVa0.gif" alt="User 3" class="avatar-img">
+                    <div class="avatar-name">Zev</div>
+                </div>
+                <div class="avatar-card">
+                    <img src="https://media.tenor.com/X7OL20jjcqoAAAAM/bloods-gang-gang.gif" alt="User 3" class="avatar-img">
+                    <div class="avatar-name">Unknown</div>
+                </div>
+                <div class="avatar-card">
+                    <img src="https://i.pinimg.com/originals/fc/85/87/fc8587301738cc2a289239c191f756e5.gif" alt="User 3" class="avatar-img">
+                    <div class="avatar-name">Unknown</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Music Player -->
+    <div class="music-player">
+        <audio controls autoplay loop>
+            <source src="DD Osama x Dudeylo x Sugarhill ddot x Edot Baby x Roscoe G x Jstar Balla - Notti Gang.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
